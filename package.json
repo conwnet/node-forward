@@ -1,0 +1,23 @@
+{
+  "name": "node-forward",
+  "version": "0.0.1",
+  "description": "Simple forward proxy for node",
+  "bin": {
+    "forward": "cli.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conwnet/node-forward.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conwnet/node-forward/issues"
+  },
+  "homepage": "https://github.com/conwnet/node-forward#readme"
+}
