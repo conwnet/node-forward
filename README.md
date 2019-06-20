@@ -20,6 +20,8 @@
 > forward 8080:google.com:80 # forward local 8080 port to google.com 80 port
 
 > forward 127.0.0.1:8080:google.com:80 # forward local 8080 port to google.com 80 port, only accept requests from 127.0.0.1
+
+> forward '[::]:8080:ipv6.google.com:80' # forward ipv6 connections
 ~~~
 
 **ENV**
