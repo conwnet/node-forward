@@ -11,7 +11,9 @@ const forward = (localHost, localPort, remoteHost, remotePort) => {
         remote.on('error', noop);
     }).on('error', noop);
 
-    server.listen(localPort, localHost);
+    server.listen(localPort, localHost, () => {
+        console.log(`Forward ${localHost}:${localPort} to ${remoteHost}:${remotePort} successful`);
+    });
 };
 
 module.exports = forward;

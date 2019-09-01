@@ -24,7 +24,8 @@ const getParameters = env => {
     const defaultRemoteHost = '127.0.0.1';
 
     if (!env) {
-        throw new Error('Please specify forward config');
+        console.log('Please specify forward config');
+        process.exit(-1);
     }
 
     const args = splitEnv(env);
@@ -41,9 +42,13 @@ const getParameters = env => {
         return [args[0], +args[1], args[2], +args[3]];
     }
 
-    throw new Error('Invalid forward config');
+    console.log('Invalid forward config');
+    process.exit(-1);
 };
 
+const noop = () => {};
+
 module.exports = {
+    noop,
     getParameters,
 };
