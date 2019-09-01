@@ -1,6 +1,6 @@
 {
   "name": "node-forward",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple forward proxy for node",
   "bin": {
     "forward": "cli.js"
